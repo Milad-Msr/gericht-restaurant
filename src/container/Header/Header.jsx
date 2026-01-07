@@ -1,17 +1,27 @@
-import SubHeading from "../../components/SubHeading/SubHeading"
+import './Header.css';
+import images from "../../constants/images";
+import { SubHeading } from '../../components/SubHeading/SubHeading';
 
 export const Header = () => {
 
 
   return (
-    <div className="app__header app__wrapper secton__padding" id="home">
+    <div id='home' className='app__header app__wrapper section__padding'>
+
       <div className="app__wrapper_info">
-        <SubHeading />
+        <SubHeading title="Chase the new Flavour" />
+        <h1 className="app__header-h1">The Key to Find Dining</h1>
+        <p className='p__opensans' style={ {margin: "2rem 0"} }>
+          Sit tellus lobortis sed senectus vivamus molestie. Condimentum 
+          volutpat mori facilisis quam scelerisque sapien. Et,penatibus aliquam amet tellus
+        </p>
+        <button className='custom__button'>Explore Menu</button>
       </div>
 
-      <div className="app__wrapper_img">
-
+      <div className='app__wrapper_img'>
+        <img src={images.welcome} alt="header img" />
       </div>
+
     </div>
   )
 }

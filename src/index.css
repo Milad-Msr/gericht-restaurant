@@ -1,28 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
-:root {
-  --font-base: 'Cormorant Upright', serif;
-  --font-alt: 'Open Sans', sans-serif;
-  
-  --color-golden: #DCCA87;
-  --color-black: #0C0C0C;
-  --color-gray: #545454;
-  --color-crimson: #F5EFDB;
+@theme {
   --color-grey: #AAAAAA;
+  --color-gray: #545454;
   --color-white: #FFFFFF;
+  --color-golden: #DCCA87;
+  --color-crimson: #F5EFDB;
+  --color-blackbg: #0C0C0C;
+  
+  --font-cormorant: 'Cormorant Upright', serif;
+  --font-open-sans: 'Open Sans', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+
+
+@layer base {
+
 }
 
-a {
-  color: unset;
-  text-decoration: none;
+
+
+@layer components {
+  .center {
+    @apply flex items-center justify-center
+  }
+  .open-sans {
+    @apply font-open-sans text-white font-normal tracking-wider capitalize leading-7 text-[16px]
+  }
+  .nav-hover {
+    @apply hover:text-grey transition-colors duration-300
+  }
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

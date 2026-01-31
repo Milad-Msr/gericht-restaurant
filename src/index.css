@@ -27,12 +27,11 @@
     @apply flex items-center justify-center
   }
   .open-sans {
-    @apply font-open-sans text-white font-normal tracking-wider capitalize leading-7 text-[16px]
+    @apply text-white font-normal tracking-wider capitalize font-open-sans text-[16px] hover:text-gray
   }
   .nav-hover {
     @apply hover:text-grey transition-colors duration-300
   }
-  
 }
 
 

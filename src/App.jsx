@@ -7,6 +7,8 @@ import { Chef } from "./components/Chef"
 import { Intro } from './components/Intro'
 import { Laurels } from './components/Laurels'
 import { Gallery } from './components/Gallery'
+import { FindUs } from './components/FindUs'
+import { Footer } from './components/Footer'
 
 export const App = () => {
 
@@ -20,6 +22,8 @@ export const App = () => {
       <Intro /> 
       <Laurels />
       <Gallery />
+      <FindUs />
+      <Footer />
     </div>
   )
 }

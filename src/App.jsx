@@ -1,29 +1,14 @@
-import './App.css'
-import { Navbar } from "./components/Navbar"
-import { Header } from "./components/Header"
-import { AboutUs } from "./components/AboutUs"
-import { SpecialMenu } from "./components/SpecialMenu"
-import { Chef } from "./components/Chef"
-import { Intro } from './components/Intro'
-import { Laurels } from './components/Laurels'
-import { Gallery } from './components/Gallery'
-import { FindUs } from './components/FindUs'
-import { Footer } from './components/Footer'
+import { AboutUs } from "./components/constants/AboutUs"
+import { Hero } from "./components/constants/Hero"
+import { Navbar } from "./components/constants/Navbar"
 
 export const App = () => {
-
+  
   return (
-    <div>
+    <div className="">
       <Navbar />
-      <Header />
+      <Hero />
       <AboutUs />
-      <SpecialMenu />
-      <Chef />
-      <Intro /> 
-      <Laurels />
-      <Gallery />
-      <FindUs />
-      <Footer />
     </div>
   )
 }

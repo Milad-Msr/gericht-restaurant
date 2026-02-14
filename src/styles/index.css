@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-vibe: 'Sail';
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+  --color-golden: #DCCA87;
+  --color-crimson: #F5EFDB;
+  --color-graymain: #545454;
+  --color-blackmain: #0C0C0C;
+  --font-opensans: 'Open Sans', sans-serif;
+  --font-cormorant: 'Cormorant Upright', serif;
+}
+
+@layer components {
+  .flex-center { @apply flex items-center justify-center }
+  .background { @apply bg-[url('../assets/bg.png')] min-h-screen bg-center bg-repeat bg-fixed bg-cover }
+  .nav-links { @apply text-[20px] font-cormorant tracking-widest text-white hover:text-golden transition-colors duration-300 }
+  .menu-smallscreen { @apply flex flex-col items-center fixed inset-0 bg-blackmain transition-all duration-500 }
+}

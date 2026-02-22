@@ -5,7 +5,7 @@ import { Button } from "../subcomponents/Button"
 export const Special = () => {
 
   return (
-    <div className="w-full min-h-screen bg-blackmain px-8 py-15 md:px-15 flex flex-col items-center justify-center">
+    <div className="w-full min-h-screen bg-blackmain px-8 py-15 md:px-15 lg:px-13 flex flex-col items-center justify-center">
 
       <div className="header flex items-center justify-center text-center flex-col">
         <p className="font-cormorant text-[20px] text-white mb-3 tracking-wider md:text-[25px]">Menu that fits your palatte</p>
